@@ -1,9 +1,10 @@
 import {useState} from 'react';
-import TextField from '@material-ui/core/TextField';
-import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import IconButton from '@material-ui/core/IconButton';
+import FormControl from '@material-ui/core/FormControl';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import '../styles/form.css';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
 
 const Form = ({ setTasks,tasks }) =>{
 
@@ -29,25 +30,21 @@ const Form = ({ setTasks,tasks }) =>{
     return(
         <div>
             <form>
-            <Grid container spacing={0}>
-                <Grid item xs={10}>
-                    <TextField 
-                        variant="outlined" 
-                        label="Add Task" 
-                        className='addTask'
-                        onChange={handleNewTask}
-                    />
-                </Grid>
-                <Grid item xs={2} align='center'>
-                    <Button 
-                        className='addButton' 
+            <FormControl className='addTask' variant="outlined">
+            <OutlinedInput
+                onChange={handleNewTask}
+                placeholder='Enter New Task'
+                endAdornment={
+                <InputAdornment position="end">
+                    <IconButton
                         onClick={addNewTask}
-                        type='submit'
                     >
-                        <AddCircleIcon />
-                    </Button>
-                </Grid>
-            </Grid>
+                    <AddCircleIcon />
+                    </IconButton>
+                </InputAdornment>
+                }
+            />
+            </FormControl>
             </form>
         </div>
     )

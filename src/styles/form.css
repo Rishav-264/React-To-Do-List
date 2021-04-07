@@ -6,6 +6,7 @@
     width:100%;
 }
 .addButton{
-    height: 100%;
-    font-size: large;
+    height: 94%;
+    font-size: small;
+    color: brown;
   }
