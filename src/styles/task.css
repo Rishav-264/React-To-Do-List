@@ -1,0 +1,7 @@
+.listItemChecked{
+    color:black;
+}
+
+.listItemUnchecked{
+    text-decoration: line-through;
+}

@@ -1,0 +1,13 @@
+*{
+    margin:2px;
+    padding:2px;
+}
+.task{
+    background-color: whitesmoke;
+    color: black;
+    width: 90%;
+    text-align: left;
+}
+.todoList{
+    text-align: center;
+}

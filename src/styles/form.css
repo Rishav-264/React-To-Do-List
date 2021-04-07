@@ -1,0 +1,11 @@
+*{
+    padding: 2px;
+    margin:2px;
+}
+.addTask{
+    width:100%;
+}
+.addButton{
+    height: 100%;
+    font-size: large;
+  }
